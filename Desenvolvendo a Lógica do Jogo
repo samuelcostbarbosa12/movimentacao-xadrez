@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int numeroSecreto = 5;
+    int palpite;
+
+    do {
+        printf("Digite um numero: ");
+        scanf("%d", &palpite);
+
+        if (palpite == numeroSecreto) {
+            printf("Acertou!!\n");
+        } else {
+            printf("Errou, tente novamente.\n");
+        }
+
+    } while (palpite != numeroSecreto);
+
+    return 0;
+}
